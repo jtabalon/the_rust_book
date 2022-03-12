@@ -8,7 +8,8 @@ fn main() {
 
     let secret_number = rand::thread_rng().gen_range(1..101);
 
-    println!("The secret number is: {}", secret_number);
+    // println!("The secret number is: {}", secret_number);
+    // the above line ruins the fun in the guessing game!
 
     loop {
         println!("Please input your guess.");
@@ -24,10 +25,15 @@ fn main() {
             // references are immutable by default
             .expect("Failed to read line");
         
-        let guess: u32 = guess.trim().parse().expect("Please type a number!");
+        // let guess: u32 = guess.trim().parse().expect("Please type a number!");
+        // using the line above as our guess causes our program to break if we don't pass in a valid integer
+        // we consider invalid input by instead using below
 
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue, 
+        };
 
-        // TODO: Consider Invalid Input
 
         // Note: guess exists prior to this u32 definition
         // shadowing allows for reusing the name
