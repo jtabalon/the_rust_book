@@ -36,8 +36,8 @@ fn main() {
 
 
         // Note: guess exists prior to this u32 definition
-        // shadowing allows for reusing the name
-        // shadowing is usually used for type casting/conversion
+        // Shadowing allows for reusing the name
+        // Shadowing is usually used for type casting/conversion
         
         println!("You guessed: {}", guess);
 
