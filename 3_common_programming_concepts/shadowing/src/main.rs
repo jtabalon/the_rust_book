@@ -9,8 +9,6 @@ fn main() {
     println!("The value of x is: {}", x);
     // The value of x is: 6
 
-    // New section of book here. 
-
     let spaces = "   ";
     let spaces = spaces.len();
     println!("The value of spaces is {}", spaces);
