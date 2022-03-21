@@ -54,6 +54,7 @@ fn main() {
 
 
     // Compound Types: Tuples + Arrays
+    // We'll work with tuples first.
     // Types within a tuple may vary.
     let tup: (i32, f64, u8) = (500, 6.4, 1);
     let (x, y, z) = tup;
@@ -67,6 +68,29 @@ fn main() {
     let one = tup.2;
 
     println!("The value of five_hundred is: {} and the value of six_point_four is {} and the value of one is: {}", five_hundred, six_point_four, one);
+
+    // Time to work with arrays.
+
+    let a = [1, 2, 3, 4, 5];
+
+    // Arrays are useful when you want data allocated on the stack versus the heap.
+    // Vectors are flexible in size (dynamic data type)
+
+    let months = ["January", "February", "March", "April", "May", "June", "July",
+                  "August", "September", "October", "November", "December"];
+    // will always stay finite as 12 months, so use an array.
+
+    let b: [i32; 5] = [1, 2, 3, 4, 5];
+    // types of elements.
+
+    let c = [3; 5];
+    // this is the same as c = [3, 3, 3, 3, 3]
+
+    // so i don't know why we can't do this lol
+    // println!("{}", months);
+    // println!("a = {}, b = {}", a, b);
+
+
 
 
 }
