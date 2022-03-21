@@ -86,6 +86,8 @@ fn main() {
     let c = [3; 5];
     // this is the same as c = [3, 3, 3, 3, 3]
 
+    // TODO: troubleshoot printing arrays.
+
     // so i don't know why we can't do this lol
     // println!("{}", months);
     // println!("a = {}, b = {}", a, b);
@@ -95,9 +97,6 @@ fn main() {
     let second = a[1];
     println!("first = {}, second = {}", first, second);
 
-
-    
-
-
+    // Now refer to invalid array indexing one directory above.
 }
 
