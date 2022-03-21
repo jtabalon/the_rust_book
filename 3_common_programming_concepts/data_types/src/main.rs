@@ -90,7 +90,13 @@ fn main() {
     // println!("{}", months);
     // println!("a = {}, b = {}", a, b);
 
+    // Array indexing
+    let first = a[0];
+    let second = a[1];
+    println!("first = {}, second = {}", first, second);
 
+
+    
 
 
 }
