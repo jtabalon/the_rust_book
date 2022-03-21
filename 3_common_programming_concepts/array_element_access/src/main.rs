@@ -22,4 +22,8 @@ fn main() {
         "The value of the element at index {} is: {}",
         index, element
     );
+
+    // Runtime checks to see if the value is greater than or equal to length.
+    // other low level languages don't do this check, leading to invalid memory access
+
 }
