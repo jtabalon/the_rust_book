@@ -115,7 +115,7 @@ fn main() {
         println!("the value is: {}", element);
     }
 
-    for number in (1..4).rev() {
+    for number in (1..4).rev() { // .rev() reverses the order!!
         println!("{}!", number);
     }
     println!("LIFTOFF!!!");
