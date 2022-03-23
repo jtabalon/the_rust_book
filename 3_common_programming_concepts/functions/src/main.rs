@@ -40,15 +40,35 @@
 // Statements perform an action and do NOT return a value.
 // Expressions evaluate to a resulting value.
 
-fn main() {
-    let y = {
-        let x = 3;
-        x + 1 // no semicolon because it's an expression.
-              // expressions don't include ending semicolons.
-    };
+// fn main() {
+//     let y = {
+//         let x = 3;
+//         x + 1 // no semicolon because it's an expression.
+//               // expressions don't include ending semicolons.
+//     };
 
-    println!("The value of y is: {}", y);
-}
+//     println!("The value of y is: {}", y);
+// }
+
+
+// 5. Functions with return values
+
+// declare type after arrow
+// return value is the last value in block of function.
+// can also use the return keyword
+
+// fn five() -> i32 {
+//     5 //note no semicolon because it's an expression
+// }
+
+// fn main() {
+//     let x = five();
+
+//     println!("The value of x is: {}", x);
+// }
+
+
+
 
 
 
