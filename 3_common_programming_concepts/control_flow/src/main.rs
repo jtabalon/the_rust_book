@@ -46,9 +46,88 @@ fn main() {
 
     // Executes a block of code until you tell it to stop (CTRL+C).
 
-    loop {
-        println!("Again!")
+    // loop {
+    //     println!("Again!")
+    // }
+
+    // Keywords: break + continue
+    // These apply to the innermost loop at the point
+    // break: tell probram to stop executing within code
+    // continue: skip over remaining code in the loop and go to next iteration
+    
+    let mut count = 0;
+    'counting_up: loop {
+        println!("count = {}", count);
+        let mut remaining = 10;
+
+        loop {
+            println!("remaining = {}", remaining);
+            if remaining == 9 {
+                break;
+            }
+            if count == 2 {
+                break 'counting_up;
+            }
+            remaining -= 1;
+        }
+
+        count += 1;
     }
+    println!("End count = {}", count);
+
+    // Common use case: use    
+
+    let mut counter = 0;
+
+    let result = loop {
+        counter += 1;
+
+        if counter == 10 {
+            break counter * 2;
+        }
+    };
+
+    println!("The result is {}", result);
+
+    // 2. while loops
+
+    let mut num = 3;
+
+    while num != 0 {
+        println!("{}!", num);
+
+        num -= 1;
+    }
+
+    println!("LIFTOFF!!!");
+
+    // 3. for loops
+
+    let a = [10, 20, 30, 40, 50];
+
+    let mut index = 0;
+    while index < 5 {
+        println!("the value is: {}", a[index]);
+        index += 1;
+    }
+
+    for element in a {
+        println!("the value is: {}", element);
+    }
+
+    for number in (1..4).rev() {
+        println!("{}!", number);
+    }
+    println!("LIFTOFF!!!");
+
+
+
+
+
+
+
+
+
 
 
 
