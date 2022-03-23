@@ -26,6 +26,34 @@ fn main() {
         println!("number is not divisible by 4, 3, or 2");
     }
 
+    // In Rust, you can assign variables to if statements, as follows:
+
+    let condition = true;
+    let number = if condition { 5 } else { 6 };
+
+    println!("The value of number is: {}", number);
+
+    // Note: The following throws an error due to mismatched types:
+    // In other words, types must match when assigning variables to an if statement
+
+    // let condition = true;
+    // let number = if condition { 5 } else { "six" };
+    // println!("The value of number is: {}", number);
+
+    // Different types of Loops:
+
+    // 1. loop
+
+    // Executes a block of code until you tell it to stop (CTRL+C).
+
+    loop {
+        println!("Again!")
+    }
+
+
+
+
+
 
     
     
