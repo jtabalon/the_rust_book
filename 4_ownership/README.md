@@ -21,11 +21,33 @@ Different memory management approaches:
 - Necessary to understand for memory management
 
 *Stacks*
-- Think plates (First in, Last Out)
 - Adding data: "push onto stack"
 - Removing data: "pop off the stack"
+- Pushing to stack is faster than allocating on heap
+    - don't have to search for place to store new data (always at top of stack)
+- Analogy: 
+    - Think plates (First in, Last Out)
+- 
+
 
 *Heaps*
 - not as organized as stacks
+- Putting data on the heap:
+    - request certain amount of space
+    - memory allocator finds spot in heap that suffices and marks it as in use
+    - returns a pointer
+- Analogy:
+    - Going to a restaurant and asking to be seated given a party size of n.
+    - Staff seats you
+    - If someone arrives late, they ask the staff
 - **slower** than accessing data on the stack because you have to follow a pointer to get there
-- 
+- Analogy: 
+    - inefficient to take orders of one person at table A, then one person at table B, then back to table A
+
+When code calls a function, values are passed into the function, and local variables pushed onto the stack.
+- When funcction is over, values get popped off the stack.
+
+Ownership
+- understanding what data on the heap
+- minimize amount of duplicate data on heap
+- cleaning up unused data on the heap
