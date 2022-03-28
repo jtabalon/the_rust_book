@@ -47,7 +47,9 @@ Different memory management approaches:
 When code calls a function, values are passed into the function, and local variables pushed onto the stack.
 - When funcction is over, values get popped off the stack.
 
-Ownership
+Ownership answers the following:
 - understanding what data on the heap
 - minimize amount of duplicate data on heap
 - cleaning up unused data on the heap
+
+**TODO** Ownership Rules
