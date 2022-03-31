@@ -15,5 +15,9 @@ NOTE: You also cannot have a mutable reference when there is an immutable one to
 
 A **reference's** scope starts from where it is introduced until the last time the reference is used.
 
+## Dangling pointers
+
+Dangling Pointer: pointer that references a location in memory that may have been given to someone else by freeing some memory while preserving a pointer to that memory.
+
 
 
