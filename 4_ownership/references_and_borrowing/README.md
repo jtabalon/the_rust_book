@@ -19,5 +19,10 @@ A **reference's** scope starts from where it is introduced until the last time t
 
 Dangling Pointer: pointer that references a location in memory that may have been given to someone else by freeing some memory while preserving a pointer to that memory.
 
+The compiler guarantees there will not be dangling references.
+- If you have a reference to some data, the compiler ensures the data will not go out of scope before the reference to the data does.
 
+## Final Notes
 
+1. At any given time, you can have either one mutable reference or any number of immutable references.
+2. References must always be valid.
