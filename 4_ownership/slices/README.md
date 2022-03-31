@@ -48,3 +48,33 @@ let s = "Hello, world!";
 
 `s` is of type `&str` - a slice pointing to that specific point of the binary. String literals are immuable.
 
+## String Slices as Parameters
+
+``` rust
+fn first_word(s: &String) -> &str {
+```
+
+Prefer the bottom one to the signature above, to allow use on both `&String` values as well as `&str` values.
+
+``` rust
+fn first_word(s: &str) -> &str {
+```
+
+Defining function to take string slice instead of reference makes a function more general and useful without losing any functionality.
+
+## Other Slices
+
+``` rust
+
+#![allow(unused)]
+fn main() {
+let a = [1, 2, 3, 4, 5];
+
+let slice = &a[1..3];
+
+assert_eq!(slice, &[2, 3]);
+}
+```
+
+- Slices store a reference to the first eleement and a length.
+
