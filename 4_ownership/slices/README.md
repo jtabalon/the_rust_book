@@ -29,3 +29,13 @@ let slice = &s[3..len];
 let slice = &s[3..];
 ```
 
+- To index a whole string, you can just use the `..` operator without leading or trailing numbers.
+
+``` rust
+let s = String::from("hello");
+
+let len = s.len();
+
+let slice = &s[0..len];
+let slice = &s[..];
+```
