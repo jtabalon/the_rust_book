@@ -39,3 +39,12 @@ let len = s.len();
 let slice = &s[0..len];
 let slice = &s[..];
 ```
+
+## String Literals are slices.
+
+``` rust
+let s = "Hello, world!";
+```
+
+`s` is of type `&str` - a slice pointing to that specific point of the binary. String literals are immuable.
+
