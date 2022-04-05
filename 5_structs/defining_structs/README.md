@@ -147,6 +147,20 @@ Tuple structs do not have names associated with their fields, but have types of 
 
 ## Unit Like Structs Without Any Fields
 
+Unit like structs behave similarly to `()`.
+
+struct AlwaysEqual;
+
+```rust
+fn main() {
+    let subject = AlwaysEqual;
+}
+```
+
+These are useful when we want to implement a trait, but don't have data to store in the type itself.
+
+
+
 
 
 
