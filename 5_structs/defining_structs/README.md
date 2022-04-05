@@ -125,3 +125,10 @@ fn main() {
 }
 
 ```
+
+`..user1` must come last to specify remaining fields.
+
+Note: you cannot use user1 after instantiating user2, because String from user1 was moved to user2. This would not be the case if new String values were used for both email and username.
+
+
+
