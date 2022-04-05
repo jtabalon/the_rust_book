@@ -159,6 +159,9 @@ fn main() {
 
 These are useful when we want to implement a trait, but don't have data to store in the type itself.
 
+IT's possible for structs to store references to data owned by something else, but requires the use of *lifetimes*.
+
+**Lifetimes** ensure data references by a struct is valid for as long as the strcut is.
 
 
 
