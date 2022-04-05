@@ -131,4 +131,23 @@ fn main() {
 Note: you cannot use user1 after instantiating user2, because String from user1 was moved to user2. This would not be the case if new String values were used for both email and username.
 
 
+## Tuple Structs
+
+```rust
+struct Color(i32, i32, i32);
+struct Point(i32, i32, i32);
+
+fn main() {
+    let black = Color(0, 0, 0);
+    let origin = Point(0, 0, 0);
+}
+```
+
+Tuple structs do not have names associated with their fields, but have types of fields.
+
+## Unit Like Structs Without Any Fields
+
+
+
+
 
