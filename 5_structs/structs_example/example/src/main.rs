@@ -38,7 +38,7 @@ fn main() {
         height: 50,
     };
 
-    println!("rect1 is {:#?}", rect1);
+    println!("rect1 is {:#?}", rect1); // Note {:#?} for debug/printing struct
 
     println!(
         "The area of the rectangle is {} square pixels.",
