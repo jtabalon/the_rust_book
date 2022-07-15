@@ -10,3 +10,21 @@
     - don't have a `main` function
     - don't compile to an executable
 
+**Crate Root**: Source fine that the Rust compiler starts from and makes the root module of crate
+
+**Package Rules**: 
+- can contain at most one library crate
+- can contain as many binary crates
+- must contain *at least* one crate
+
+**File Structure**
+- `src/main.rs` -> binary crate
+- `src/lib.rs` -> library crate
+- it is possible to have both
+
+NOTE: a package can have multiple binary crates by placing files in teh `src/bin` directory.
+- each file will be a separate binary crate
+
+
+
+
