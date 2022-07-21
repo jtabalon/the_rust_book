@@ -24,7 +24,3 @@
 
 NOTE: a package can have multiple binary crates by placing files in teh `src/bin` directory.
 - each file will be a separate binary crate
-
-
-
-
