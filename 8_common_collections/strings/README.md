@@ -143,3 +143,8 @@ Rust doesn't allow us to index into a string because the operation normal guaran
 
 
 ## Methods for Iterating Over Strings
+
+Index via:
+- characters
+- bytes
+
