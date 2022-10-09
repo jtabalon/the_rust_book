@@ -148,3 +148,6 @@ Index via:
 - characters
 - bytes
 
+## Strings are not so simple
+
+Rust decides to make handling strings a more thoughtful experience in order to avoid handling non-ASCII characters later in the development cycle.
