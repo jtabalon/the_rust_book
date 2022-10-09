@@ -105,7 +105,8 @@ fn main() {
 
 Using an enum plus a `match` expression means Rust will ensure every possible case is handled.
 
-
+## Dropping a Vector Drops Its Elements
+Like any other `struct` a vector is freed when it goes out of scope.
 
 
 
