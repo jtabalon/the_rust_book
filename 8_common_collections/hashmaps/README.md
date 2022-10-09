@@ -142,6 +142,7 @@ The code above counts the number of occurrences of each word in the string.
 
 
 ## Summary
+Hashmaps, strings, and vectors are all important data structures.
 
 
 
