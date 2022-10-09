@@ -83,6 +83,28 @@ fn main() {
 
 Note: To change the value the mutable reference refers to, we must use the `*` deference operator to get to the value in `i` before using the `+=` operator.
 
+## Using an Enum to Store Multiple Types
+
+Vector elements must contain the same type, so we can define and use an **enum** to represent elements of different types.
+
+```
+fn main() {
+    enum SpreadsheetCell {
+        Int(i32),
+        Float(f64),
+        Text(String),
+    }
+
+    let row = vec![
+        SpreadsheetCell::Int(3),
+        SpreadsheetCell::Text(String::from("blue")),
+        SpreadsheetCell::Float(10.12),
+    ];
+}
+```
+
+Using an enum plus a `match` expression means Rust will ensure every possible case is handled.
+
 
 
 
