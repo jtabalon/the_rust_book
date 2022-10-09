@@ -105,3 +105,41 @@ fn main() {
 **Main Takeaway:**
 - use `format!` macro to concatenate multiple strings
 
+## Indexing into Strings
+
+Unlike other languages, **you cannot index individual characters via indexing.**
+
+This code fails to compile:
+```
+fn main() {
+    let s1 = String::from("hello");
+    let h = s1[0];
+}
+```
+
+### Internal Representation
+A string is a wrapper over a `Vec<u8>`.
+
+UTF-8 encoding presents challenges and mishaps when handling size of bytes.
+
+For example: 
+
+```
+let hello = String::from("Hola");
+let hello = String::from("Здравствуйте");
+```
+
+The first `hello` is 4 bytes long, but surprisingly the second `hello` is 24 bytes long.
+
+To avoid unexpected values and bugs, Rust doesn't compile.
+
+Rust doesn't allow us to index into a string because the operation normal guarantees constant `O(1)` time, but Rust cannot guarantee that because it must search from beginning to the specified index.
+
+**Indexing into a string is often a bad idea because it's not clear what the return type of the string-indexing operation should be:**
+- byte value
+- character
+- grapheme cluster
+- string slice
+
+
+## Methods for Iterating Over Strings
