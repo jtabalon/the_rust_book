@@ -46,3 +46,4 @@ fn main() {
 ```
 
 `String::from` and `to_string` do the same thing, so which you choose is a matter of style and readability.
+
