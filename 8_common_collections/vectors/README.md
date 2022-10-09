@@ -48,6 +48,42 @@ match third {
 
 In the case above, both return the same value.
 
+### Why use get versus indexing?
+
+- usual indexing method causes the program to panic because it references a nonexistent element
+- `.get` method returns a `None` object without panicking
+
+- In short, the usual indexing method causes the program to panic/break whereas the `.get` method lets you handle these edge cases.
+
+
+## Iterating over the Values in a Vector
+
+**Immutable For Loop**
+
+```
+fn main() {
+    let v = vec![100, 32, 57];
+    for i in &v {
+        println!("{}", i);
+    }
+}
+```
+
+**Mutable For Loop**
+
+```
+fn main() {
+    let mut v = vec![100, 32, 57];
+    for i in &mut v {
+        *i += 50;
+    }
+}
+```
+
+
+Note: To change the value the mutable reference refers to, we must use the `*` deference operator to get to the value in `i` before using the `+=` operator.
+
+
 
 
 
