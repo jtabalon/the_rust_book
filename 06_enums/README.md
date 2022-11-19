@@ -47,7 +47,7 @@ fn main() {
 
 You automatically get a constructor function defined as a result of defining an enum.
 
-Another advantage verseus structs: Each variant can have different types and amounts of associated data.
+Another advantage versus structs: Each variant can have different types and amounts of associated data.
 
 ``` rust
 fn main() {
